@@ -1,0 +1,52 @@
+<button
+  mat-button
+  *ngIf="matButton"
+  [style.backgroundColor]="bgColor"
+  [style.color]="color"
+  [style.fontSize]="fontSize"
+  [style.borderRadius]="borderRadius"
+  [style.width]="width"
+  [style.height]="height"
+  [style.fontSize]="fontSize"
+  [style.padding]="padding"
+>
+  {{text}}
+</button>
+
+<button
+  mat-flat-button
+  *ngIf="flatButton"
+  [style.backgroundColor]="bgColor"
+  [style.color]="color"
+  [style.fontSize]="fontSize"
+  [style.borderRadius]="borderRadius"
+  [style.width]="width"
+  [style.height]="height"
+  [style.fontSize]="fontSize"
+  [style.padding]="padding"
+>
+  {{text}}
+</button>
+
+<button
+    class="btn d-flex"
+    *ngIf="button"
+    [style.color]="color"
+    [style.backgroundColor]="bgColor"
+    [style.fontSize]="fontSize"
+    [style.borderRadius]="borderRadius"
+    [style.border]="borderButton"
+    [style.padding]="padding"
+    [attr.aria-label]="value || text"
+    >
+    {{text}}
+</button>
+
+
+
+
+
+
+
+
+

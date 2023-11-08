@@ -1,0 +1,31 @@
+<div [class]="class" >
+  <atom-text
+      margin="80px 0 0 0"
+      [fontSize]="fontSizeTitle"
+      [fontFamily]="fontFamily"
+      [style.fontWeight]="fontWeight"
+      [text]="title"
+      [color]="colorTitle"
+      style="width: 100%;"
+      >
+    </atom-text>
+    <atom-text
+      [fontSize]="fontSizeSubtitle"
+      [text]="subtitle"
+      [color]="colorSubtitle"
+      width="65%"
+      >
+    </atom-text>
+    <div class=" flex ">
+      <atom-button
+        [matButton]= true
+        bgColor="#4C87E8"
+        color="#fff"
+        padding=" 20px 20px 20px 20px"
+        fontSize="1.2vw"
+        borderRadius="15px "
+        borderButton="2px solid #fff"
+        [text]="textButton">
+      </atom-button>
+    </div>
+</div>
